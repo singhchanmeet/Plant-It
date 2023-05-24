@@ -1,0 +1,501 @@
+* {
+    font-family: 'Roboto Slab', serif;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+:root {
+    --bg-color: #80e449;
+    --primary-color: rgb(11, 29, 33);
+    --secondary-color: #ff9500;
+    --tertiary-color: #ca8639;
+    --text-color: #181818;
+}
+
+*::selection {
+    background-color: var(--tertiary-color);
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: #b2f38f;
+}
+
+#strip1 {
+    position: sticky;
+    top: 0px;
+    background-color: var(--bg-color);
+    height: 60px;
+}
+
+#strip2 {
+    background: url('/static/media/bg4.png');
+    background-repeat: no-repeat;
+    background-size: 94em;
+    /* opacity: 80%; */
+
+}
+
+#strip3 {
+    color: #181818 ;
+    background-color: #b2f38f;
+}
+
+#strip4 {
+    color: var(--bg-color);
+    background-color: #181818;
+}
+
+#strip5 {
+    background-color: aliceblue;
+}
+
+#strip7 {
+    background-color: aliceblue;
+}
+
+.heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#timelineimg {
+    width: 94em;
+}
+
+#mainHeading {
+    margin-left: 100px;
+    font-size: 125px;
+}
+
+#motto {
+    margin-left: 100px;
+    font-size: 32px;
+}
+
+#mainPara {
+    margin: 35px;
+    margin-right: 550px;
+    margin-left: 100px;
+    font-size: 32px;
+    opacity: 100%;
+    z-index: 3;
+}
+
+#logo {
+    height: 50px;
+    margin-left: 30px;
+    position: fixed;
+}
+
+#mainName {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+#mainImage {
+    display: inline;
+    float: right;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.centred {
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+.navButton {
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 7px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.navButton:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#mainImage {
+    float: right;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+#plantitButton {
+    padding: 7px;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 100px;
+    margin: 3px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-left: 200px;
+}
+
+#plantitButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#navLoginButton {
+    background-color: var(--secondary-color);
+    padding: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+
+
+}
+
+#navLoginButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.text:hover {
+    color: var(--primary-color);
+
+}
+
+#intro {
+    text-align: justify;
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+
+}
+
+#logoDown {
+    width: 190px;
+
+}
+
+#footerMenu {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'footerAbove footerAbove footerAbove'
+        'footerLeft footerMid footerRight'
+        'footerBottom footerBottom footerBottom';
+}
+
+#footerAbove {
+    grid-area: footerAbove;
+}
+
+#footerLeft {
+    grid-area: footerLeft;
+}
+
+#footerRight {
+    grid-area: footerRight;
+}
+
+#footerBottom {
+    grid-area: footerBottom;
+}
+
+#footerMid {
+    grid-area: footerMid;
+    display: grid;
+    grid-template-areas:
+        'socialhead socialhead'
+        'gmail instagram'
+        'github linkedin';
+}
+
+#socialhead {
+    grid-area: socialhead;
+}
+
+#linkedin {
+    display: inline;
+    grid-area: linkedin;
+}
+
+#instagram {
+    display: inline;
+    grid-area: instagram;
+}
+
+#gmail {
+    display: inline;
+    grid-area: gmail;
+}
+
+#github {
+    display: inline;
+    grid-area: github;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    width: 595px;
+    height: 300px;
+    border: 2px solid var(--primary-color);
+    margin: 50px;
+    font-size: 20px;
+
+}
+
+.item:hover {
+    width: 625px;
+    height: 330px;
+    font-size: 36px;
+}
+
+.fleximg {
+    width: 595px;
+    height: 300px;
+}
+
+.fleximg:hover {
+    width: 625px;
+    height: 330px;
+}
+
+#inputtextml {
+    display: inline;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#inputbtnml {
+    background-color: #a320a5;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 20px;
+    display: inline;
+}
+
+.messagesent {
+    background-color: #a320a5;
+}
+
+.stripHeading {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stripSubHeading {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 25px;
+}
+
+.searchbar {
+    display: inline;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+
+
+}
+
+/* .dropbtn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--secondary-color);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} */
+
+.downicon:hover {
+    transform: rotate(180deg);
+}
